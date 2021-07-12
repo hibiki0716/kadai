@@ -1,0 +1,32 @@
+#pragma once
+
+class Fader
+{
+
+public:
+
+	enum class FADE_STATE
+	{
+		NONE
+		, FADE_IN		// èôÅXÇ…ñæì]
+		, FADE_OUT		// èôÅXÇ…à√ì]
+	};
+
+	FADE_STATE GetState(void);
+	bool IsEnd(void);
+	void SetFade(FADE_STATE state);
+	
+	void Init(void);
+	void Update(void);
+
+private:
+
+	FADE_STATE mState;
+
+	// ãPìxíl
+	int mBrightValue;
+
+	bool mIsEnd;
+
+};
+
