@@ -14,6 +14,7 @@
 #include"Fader.h"
 #include"Utility.h"
 #include"TimeLimit.h"
+#include"PopupUIBase.h"
 #include "GameScene.h"
 
 GameScene::GameScene(SceneManager* manager) : SceneBase(manager){
@@ -24,6 +25,8 @@ GameScene::GameScene(SceneManager* manager) : SceneBase(manager){
 
 	mTimeLimit = new TimeLimit(manager);
 	
+	mPopupUiBase = new PopupUIBase(this);
+	mPopupUiBase->Init({ 100,100 });
 }
 
 /// <summary>
@@ -85,6 +88,24 @@ void GameScene::Update(void){
 }
 
 void GameScene::UpdateGame(void){
+	
+	// メニューが開いているか
+	if (mPopupUiBase->IsOpen() == true) {
+		mPopupUiBase->Update();
+		// Mボタンが押されたらメニュ画面を閉じる
+		if (keyTrgDown[KEY_P1_B]) {
+			mPopupUiBase->Close();
+		}
+		// 処理を中断
+		return;
+	}
+	else {
+		// Mボタンが押されたらメニュ画面を開く
+		if (keyTrgDown[KEY_P1_B]) {
+			mPopupUiBase->Open();
+		}
+	}
+		
 	// ステージ
 	mStage->Update();
 	// Unit
@@ -240,6 +261,12 @@ void GameScene::DrawGame(void){
 
 	// スコア表示
 	DrawScore();
+
+	// メニューが開かれているとき描画する
+	if (mPopupUiBase->IsOpen() == true) {
+		mPopupUiBase->Draw();
+	}
+
 }
 
 void GameScene::DrawClear(void) {
