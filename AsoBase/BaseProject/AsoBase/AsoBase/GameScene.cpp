@@ -575,16 +575,51 @@ void GameScene::LoadScore(void){
 
 }
 
+void GameScene::SaveScore(void){
+	// SaveScore関数をどこで呼び出すか
+	// 必要な条件分も記述
+	// ※Bestスコアよりも、ステージクリア時のスコアの方が小さい場合
+
+	// 動的配列内のBestスコア更新
+	if (0 < mBestScores.count(mStageNo)) {
+		// mapの中にKeyがある場合
+		mBestScores[mStageNo] = mCntMove;
+	}
+	else {
+		// mapの中にKeyがない場合
+		mBestScores.emplace(mStageNo, mCntMove);
+	}
+	// ファイルパスを取得
+	std::string filePath = GetCsvPathScore();
+
+	// ファイル全体への書き込み
+	std::ofstream ofs = std::ofstream(filePath);
+
+	// 行ごとにファイルごとに書き込む
+	std::string line;
+
+	for (std::pair<int,int> p : mBestScores) {
+		line = "";
+		line += std::to_string(p.first);
+		line += ",";
+		line += std::to_string(p.second);
+		ofs << line<<std::endl;
+	}
+	ofs.close();
+}
+
 int GameScene::GetBestScore(void){
+	int ret = 999;
+	//auto find = mBestScores.find(mStageNo);
 
-	// 現在のステージ番号
-	mStageNo;
-
-	// ステージごとのBestスコア
-	mBestScores;
+	if (0 <mBestScores.count(mStageNo)) {
+		// mapに対象のキーがなかった
+		std::map<int, int>::iterator it = mBestScores.find(mStageNo);
+		ret = it->second;
+	}
 
 	// 現在のステージのBestスコア
-	return 0;
+	return ret;
 }
 
 void GameScene::ChangeState(STATE state){
@@ -595,6 +630,9 @@ void GameScene::ChangeState(STATE state){
 		break;
 	case GameScene::STATE::CLEAR:
 		mStepClear = 0.0f;
+		if (mCntMove < mBestScore) {
+			SaveScore();
+		}
 		break;
 	case GameScene::STATE::CHANGE_STAGE:
 		// だんだん暗くする

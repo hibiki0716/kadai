@@ -130,6 +130,9 @@ private:
 	// 外部ファイルを使用してBestスコアを読み取る
 	void LoadScore(void);
 
+	// 外部ファイルを使用してBestスコアを書き込む
+	void SaveScore(void);
+
 	// 現在のステージのBestスコアを取得
 	int GetBestScore(void);
 

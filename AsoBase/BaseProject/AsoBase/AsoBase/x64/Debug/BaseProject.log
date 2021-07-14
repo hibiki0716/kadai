@@ -1,13 +1,54 @@
-﻿  GameScene.cpp
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\Utility.h(11,2): warning C4091: 'static ': 変数が何も宣言されていないときは、'Utility' の左辺を無視します。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(52,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(94,26): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(99,30): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(134,22): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(225,30): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(233,26): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(300,26): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(308,30): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(337,26): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(358,29): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-  BaseProject.vcxproj -> D:\Users\1916002\Desktop\-\AsoBase\BaseProject\AsoBase\AsoBase\x64\Debug\BaseProject.exe
+﻿  Application.cpp
+  Box.cpp
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(150,15): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(151,15): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(157,24): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(157,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(157,14): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(189,15): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(190,15): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(199,24): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(199,19): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Box.cpp(199,14): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  Fader.cpp
+  GameCommon.cpp
+  GameoverScene.cpp
+  GameScene.cpp
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Utility.h(11,2): warning C4091: 'static ': 変数が何も宣言されていないときは、'Utility' の左辺を無視します。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(52,29): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(94,26): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(99,30): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(134,22): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(225,30): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(233,26): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(300,26): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(308,30): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(337,26): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\GameScene.cpp(358,29): warning C4267: '初期化中': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+  KeyCheck.cpp
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\KeyCheck.cpp(65,41): warning C4804: '~': 演算中の 'bool' 型の使用方法が安全ではありません
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\KeyCheck.cpp(65,41): warning C4805: '&': 演算中の 'bool' 型と 'int' 型の混用は安全ではありません
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\KeyCheck.cpp(66,28): warning C4804: '~': 演算中の 'bool' 型の使用方法が安全ではありません
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\KeyCheck.cpp(66,39): warning C4805: '&': 演算中の 'int' 型と 'bool' 型の混用は安全ではありません
+  main.cpp
+  SceneBase.cpp
+  SceneManager.cpp
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\SceneManager.cpp(23,27): warning C4244: '=': 'ULONGLONG' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\SceneManager.cpp(34,16): warning C4244: '初期化中': 'ULONGLONG' から 'float' への変換です。データが失われる可能性があります。
+  Stage.cpp
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Utility.h(11,2): warning C4091: 'static ': 変数が何も宣言されていないときは、'Utility' の左辺を無視します。
+  Storage.cpp
+  TestPlayer.cpp
+  TimeLimit.cpp
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\TimeLimit.cpp(37,40): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  TitleScene.cpp
+  Unit.cpp
+  Utility.cpp
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Utility.h(11,2): warning C4091: 'static ': 変数が何も宣言されていないときは、'Utility' の左辺を無視します。
+  Vector2.cpp
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Vector2.cpp(21,32): warning C4244: '+=': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\Vector2.cpp(22,32): warning C4244: '+=': 'float' から 'int' への変換です。データが失われる可能性があります。
+  _DebugConOut.cpp
+  _DebugDispOut.cpp
+  コードを生成中...
+  BaseProject.vcxproj -> C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\x64\Debug\BaseProject.exe
