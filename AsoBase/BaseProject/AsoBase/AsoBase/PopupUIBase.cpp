@@ -2,7 +2,7 @@
 #include "PopupUIBase.h"
 
 PopupUIBase::PopupUIBase(GameScene* scene){
-
+	mGameScene = scene;
 }
 
 void PopupUIBase::Init(Vector2 pos){

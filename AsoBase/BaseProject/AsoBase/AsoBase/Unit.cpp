@@ -115,9 +115,9 @@ void Unit::Draw(void){
 	}
 
 	DrawGraph(GAME_AREA_X + mPos.x, GAME_AREA_Y + mPos.y,
-		mPlayerImage[(int)mDir][animId],true);
-	DrawGraph(GAME_AREA_X + mPos.x, GAME_AREA_Y + mPos.y,
 		mImages[(int)mDir][animId], true);
+	DrawGraph(GAME_AREA_X + mPos.x, GAME_AREA_Y + mPos.y,
+		mPlayerImage[(int)mDir][animId], true);
 }
 
 void Unit::Release(void){

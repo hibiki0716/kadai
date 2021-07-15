@@ -67,8 +67,7 @@ void GameScene::Init(void){
 /// <returns></returns>
 void GameScene::Update(void){
 
-	if (keyTrgDown[KEY_SYS_START])
-	{
+	if (keyTrgDown[KEY_SYS_START]){
 		mSceneManager->ChangeScene(SCENE_ID::GAMEOVER, true);
 	}
 
@@ -299,8 +298,9 @@ void GameScene::DrawScore(void){
 	// ベストスコア
 	x1 = 300;
 	x2 = x1 + width;
-	DrawBox(x2, y1, x2+150, y2, 0x000000, true);
+	
 	DrawBox(x1, y1, x1+width, y2, 0x000000,true);
+	DrawBox(x2+50, y1, x2 + 150, y2, 0x000000, true);
 
 	charX = ((x1 + x2) / 2) - 10;
 	SetFontSize(32);
