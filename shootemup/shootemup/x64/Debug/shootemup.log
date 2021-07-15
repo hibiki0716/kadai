@@ -1,17 +1,27 @@
-﻿  main.cpp
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(157,39): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(157,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(160,41): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(160,37): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(160,24): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(186,32): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(186,23): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(190,34): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(190,30): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(190,21): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(206,19): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(208,37): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(208,25): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(212,35): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\Owner\Desktop\shootemup\shootemup\main.cpp(212,23): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-  shootemup.vcxproj -> C:\Users\Owner\Desktop\shootemup\x64\Debug\shootemup.exe
+﻿  Geometry.cpp
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\Geometry.cpp(8,55): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\Geometry.cpp(8,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\Geometry.cpp(8,32): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\Geometry.cpp(8,23): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\Geometry.cpp(13,99): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\Geometry.cpp(13,76): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\Geometry.cpp(13,54): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\Geometry.cpp(13,34): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  main.cpp
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(157,39): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(157,26): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(160,41): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(160,37): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(160,24): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(186,32): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(186,23): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(190,34): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(190,30): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(190,21): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(206,19): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(208,37): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(208,25): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(212,35): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Users\1916002\Desktop\kadai\shootemup\shootemup\main.cpp(212,23): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  コードを生成中...
+  shootemup.vcxproj -> D:\Users\1916002\Desktop\kadai\shootemup\x64\Debug\shootemup.exe
