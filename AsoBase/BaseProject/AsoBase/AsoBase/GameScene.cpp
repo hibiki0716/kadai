@@ -307,7 +307,7 @@ void GameScene::DrawScore(void){
 	DrawFormatString(charX, charY, 0xffffff, "%d",mBestScore);
 
 	SetFontSize(20);
-	DrawFormatString(x1, y1, 0xffffff, "BestScore");
+	DrawFormatString(x1, y1, 0xffffff, "Score");
 }
 
 /// <summary>
