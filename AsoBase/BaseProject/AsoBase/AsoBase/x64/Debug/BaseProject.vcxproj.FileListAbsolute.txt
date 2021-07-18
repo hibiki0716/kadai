@@ -2,5 +2,3 @@ C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\x64\Debug\BaseProject
 C:\Users\Owner\Desktop\AsoBase\BaseProject\AsoBase\AsoBase\x64\Debug\BaseProject.pdb
 C:\Users\Owner\Desktop\2021.末金先生授業\AsoBase\BaseProject\AsoBase\AsoBase\x64\Debug\BaseProject.exe
 C:\Users\Owner\Desktop\2021.末金先生授業\AsoBase\BaseProject\AsoBase\AsoBase\x64\Debug\BaseProject.pdb
-D:\kadai\AsoBase\BaseProject\AsoBase\AsoBase\x64\Debug\BaseProject.exe
-D:\kadai\AsoBase\BaseProject\AsoBase\AsoBase\x64\Debug\BaseProject.pdb
