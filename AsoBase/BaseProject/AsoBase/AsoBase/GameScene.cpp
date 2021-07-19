@@ -14,7 +14,6 @@
 #include"Fader.h"
 #include"Utility.h"
 #include"TimeLimit.h"
-#include"PopupUIBase.h"
 #include "GameScene.h"
 
 GameScene::GameScene(SceneManager* manager) : SceneBase(manager){
@@ -25,8 +24,6 @@ GameScene::GameScene(SceneManager* manager) : SceneBase(manager){
 
 	mTimeLimit = new TimeLimit(manager);
 	
-	mPopupUiBase = new PopupUIBase(this);
-	mPopupUiBase->Init({ 100,100 });
 }
 
 /// <summary>
@@ -67,7 +64,8 @@ void GameScene::Init(void){
 /// <returns></returns>
 void GameScene::Update(void){
 
-	if (keyTrgDown[KEY_SYS_START]){
+	if (keyTrgDown[KEY_SYS_START])
+	{
 		mSceneManager->ChangeScene(SCENE_ID::GAMEOVER, true);
 	}
 
@@ -87,24 +85,6 @@ void GameScene::Update(void){
 }
 
 void GameScene::UpdateGame(void){
-	
-	// メニューが開いているか
-	if (mPopupUiBase->IsOpen() == true) {
-		mPopupUiBase->Update();
-		// Mボタンが押されたらメニュ画面を閉じる
-		if (keyTrgDown[KEY_P1_B]) {
-			mPopupUiBase->Close();
-		}
-		// 処理を中断
-		return;
-	}
-	else {
-		// Mボタンが押されたらメニュ画面を開く
-		if (keyTrgDown[KEY_P1_B]) {
-			mPopupUiBase->Open();
-		}
-	}
-		
 	// ステージ
 	mStage->Update();
 	// Unit
@@ -260,12 +240,6 @@ void GameScene::DrawGame(void){
 
 	// スコア表示
 	DrawScore();
-
-	// メニューが開かれているとき描画する
-	if (mPopupUiBase->IsOpen() == true) {
-		mPopupUiBase->Draw();
-	}
-
 }
 
 void GameScene::DrawClear(void) {
@@ -298,16 +272,15 @@ void GameScene::DrawScore(void){
 	// ベストスコア
 	x1 = 300;
 	x2 = x1 + width;
-	
+	DrawBox(x2, y1, x2+150, y2, 0x000000, true);
 	DrawBox(x1, y1, x1+width, y2, 0x000000,true);
-	DrawBox(x2+50, y1, x2 + 150, y2, 0x000000, true);
 
 	charX = ((x1 + x2) / 2) - 10;
 	SetFontSize(32);
 	DrawFormatString(charX, charY, 0xffffff, "%d",mBestScore);
 
 	SetFontSize(20);
-	DrawFormatString(x1, y1, 0xffffff, "Score");
+	DrawFormatString(x1, y1, 0xffffff, "BestScore");
 }
 
 /// <summary>

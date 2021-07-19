@@ -14,7 +14,6 @@ class Box;
 class Storage;
 class Fader;
 class TimeLimit;
-class PopupUIBase;
 
 class GameScene : public SceneBase
 {
@@ -92,7 +91,6 @@ private:
 	TimeLimit* mTimeLimit;
 	Box* mBox;
 	
-	
 	int mImageClear;
 
 	float mStepClear;
@@ -105,8 +103,6 @@ private:
 
 	// ステージごとのBestスコア
 	std::map<int, int>mBestScores;
-
-	PopupUIBase* mPopupUiBase;
 
 	// 動的配列
 	std::vector<Box*> mBoxes;

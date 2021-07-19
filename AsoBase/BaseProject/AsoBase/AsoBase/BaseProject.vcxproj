@@ -167,7 +167,6 @@
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="KeyCheck.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PopupUIBase.cpp" />
     <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Stage.cpp" />
@@ -190,7 +189,6 @@
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="KeyCheck.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="PopupUIBase.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Stage.h" />
