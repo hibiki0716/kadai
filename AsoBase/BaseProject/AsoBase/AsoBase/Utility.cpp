@@ -4,8 +4,7 @@
 #include <vector>
 #include "Utility.h"
 
-std::vector<std::string> Utility::Split(std::string& line, char delimiter)
-{
+std::vector<std::string> Utility::Split(std::string& line, char delimiter){
 
     std::istringstream stream(line);
     std::string field;

@@ -12,10 +12,8 @@ bool keyTrgUp[KEY_LIST_MAX];	// KeyUpのトリガー状態
 
 
 // キー情報の初期化
-void KeyInit(void)
-{
-	for (int k = 0; k < KEY_LIST_MAX; k++)
-	{
+void KeyInit(void){
+	for (int k = 0; k < KEY_LIST_MAX; k++){
 		keyOld[k] = false;
 		keyNew[k] = false;
 		keyTrgDown[k] = false;
@@ -25,12 +23,10 @@ void KeyInit(void)
 
 
 // キー情報の作成
-void CheckKeyList(void)
-{
+void CheckKeyList(void){
 	// ①１フレーム前のデータをコピーする：keyOld
 	// 　その他の変数は初期化
-	for (int k = 0; k < KEY_LIST_MAX; k++)
-	{
+	for (int k = 0; k < KEY_LIST_MAX; k++){
 		keyOld[k] = keyNew[k];
 		keyNew[k] = false;
 		keyTrgDown[k] = false;
@@ -60,8 +56,7 @@ void CheckKeyList(void)
 
 	// ③トリガーの状態をチェックし格納：keyTrgDown、keyTrgUp
 
-	for (int k = 0; k < KEY_LIST_MAX; k++)
-	{
+	for (int k = 0; k < KEY_LIST_MAX; k++){
 		keyTrgDown[k] = keyNew[k] & ~keyOld[k];
 		keyTrgUp[k] = ~keyNew[k] & keyOld[k];
 

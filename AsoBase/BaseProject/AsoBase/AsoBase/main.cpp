@@ -8,19 +8,16 @@
 
 // WinMain関数
 //---------------------------------
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
-{
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){
 	Application application;	//インスタンスの生成
 
-	if (!application.Init())
-	{
+	if (!application.Init()){
 		return -1;
 	}
 
 	application.Run();
 
-	if (!application.Release())
-	{
+	if (!application.Release()){
 		return -1;
 	}
 

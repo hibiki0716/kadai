@@ -3,30 +3,25 @@
 #include "SceneManager.h"
 #include "TitleScene.h"
 
-TitleScene::TitleScene(SceneManager* manager) : SceneBase(manager)
-{
+TitleScene::TitleScene(SceneManager* manager) : SceneBase(manager){
 }
 
-void TitleScene::Init(void)
-{
+void TitleScene::Init(void){
 	//タイトル画像の読み込み
 	mImage = LoadGraph("Image/Scene/Title.png");
 
 	count = 0;
 }
 
-void TitleScene::Update(void)
-{
+void TitleScene::Update(void){
 
-	if (keyTrgDown[KEY_SYS_START])
-	{
+	if (keyTrgDown[KEY_SYS_START]){
 		mSceneManager->ChangeScene(SCENE_ID::GAME, true);
 	}
 
 }
 
-void TitleScene::Draw(void)
-{
+void TitleScene::Draw(void){
 	SetDrawScreen(DX_SCREEN_BACK);
 	ClearDrawScreen();
 
@@ -45,8 +40,7 @@ void TitleScene::Draw(void)
 		
 }
 
-void TitleScene::Release(void)
-{
+void TitleScene::Release(void){
 	// 画像の開放
 	DeleteGraph(mImage);
 }

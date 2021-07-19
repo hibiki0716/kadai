@@ -1,33 +1,28 @@
 #include "DxLib.h"
 #include "Fader.h"
 
-Fader::FADE_STATE Fader::GetState(void)
-{
+Fader::FADE_STATE Fader::GetState(void){
 	return mState;
 }
 
-bool Fader::IsEnd(void)
-{
+bool Fader::IsEnd(void){
 	return mIsEnd;
 }
 
-void Fader::SetFade(FADE_STATE state)
-{
+void Fader::SetFade(FADE_STATE state){
 	mState = state;
 	if (mState != FADE_STATE::NONE){
 		mIsEnd = false;
 	}
 }
 
-void Fader::Init(void)
-{
+void Fader::Init(void){
 	mState = FADE_STATE::NONE;
 	mBrightValue = 255;
 	mIsEnd = true;
 }
 
-void Fader::Update(void)
-{
+void Fader::Update(void){
 
 	if (mIsEnd){
 		return;

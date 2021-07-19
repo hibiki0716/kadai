@@ -4,30 +4,25 @@
 #include "SceneManager.h"
 #include "GameoverScene.h"
 
-GameoverScene::GameoverScene(SceneManager* manager) : SceneBase(manager)
-{
+GameoverScene::GameoverScene(SceneManager* manager) : SceneBase(manager){
 }
 
-void GameoverScene::Init(void)
-{
+void GameoverScene::Init(void){
 	//タイトル画像の読み込み
 	mImage = LoadGraph("Image/Scene/End.png");
 
 	count = 0;
 }
 
-void GameoverScene::Update(void)
-{
+void GameoverScene::Update(void){
 
-	if (keyTrgDown[KEY_SYS_START])
-	{
+	if (keyTrgDown[KEY_SYS_START]){
 		mSceneManager->ChangeScene(SCENE_ID::TITLE, true);
 	}
 
 }
 
-void GameoverScene::Draw()
-{
+void GameoverScene::Draw(){
 
 	SetDrawScreen(DX_SCREEN_BACK);
 	ClearDrawScreen();
@@ -45,8 +40,7 @@ void GameoverScene::Draw()
 
 }
 
-void GameoverScene::Release(void)
-{
+void GameoverScene::Release(void){
 	// 画像の開放
 	DeleteGraph(mImage);
 }

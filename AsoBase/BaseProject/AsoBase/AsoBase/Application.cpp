@@ -5,8 +5,7 @@
 #include "_debug/_DebugDispOut.h"
 #include "Application.h"
 
-bool Application::Init(void)
-{
+bool Application::Init(void){
 
 	// システム処理
 	SetWindowText("1916002_荒木響稀");
@@ -28,11 +27,9 @@ bool Application::Init(void)
 
 }
 
-void Application::Run(void)
-{
+void Application::Run(void){
 	//ゲームループ
-	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0)
-	{
+	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0){
 		
 		_dbgStartDraw();
 
@@ -47,8 +44,7 @@ void Application::Run(void)
 	}
 }
 
-bool Application::Release(void)
-{
+bool Application::Release(void){
 	mSceneManager.Release();
 
 	DxLib_End();

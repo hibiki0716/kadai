@@ -5,8 +5,7 @@
 #include "GameoverScene.h"
 #include "SceneManager.h"
 
-void SceneManager::Init()
-{
+void SceneManager::Init(){
 
 	mSceneID = SCENE_ID::TITLE;
 	mWaitSceneID = SCENE_ID::NONE;
@@ -23,11 +22,9 @@ void SceneManager::Init()
 	mTickCnt = GetTickCount64();
 }
 
-void SceneManager::Update(void)
-{
+void SceneManager::Update(void){
 
-	if (mScene == nullptr)
-	{
+	if (mScene == nullptr){
 		return;
 	}
 
@@ -37,21 +34,17 @@ void SceneManager::Update(void)
 	mTickCnt = tickCnt;
 
 	mFader->Update();
-	if (mIsSceneChanging)
-	{
+	if (mIsSceneChanging){
 		Fader::FADE_STATE fState = mFader->GetState();
-		switch (fState)
-		{
+		switch (fState)	{
 		case Fader::FADE_STATE::FADE_IN:
-			if (mFader->IsEnd())
-			{
+			if (mFader->IsEnd())	{
 				mFader->SetFade(Fader::FADE_STATE::NONE);
 				mIsSceneChanging = false;
 			}
 			break;
 		case Fader::FADE_STATE::FADE_OUT:
-			if (mFader->IsEnd())
-			{
+			if (mFader->IsEnd()){
 				DoChangeScene();
 				mFader->SetFade(Fader::FADE_STATE::FADE_IN);
 			}
@@ -60,8 +53,7 @@ void SceneManager::Update(void)
 			break;
 		}
 	}
-	else 
-	{
+	else {
 		mScene->Update();
 	}
 
@@ -69,22 +61,18 @@ void SceneManager::Update(void)
 
 }
 
-void SceneManager::Release(void)
-{
+void SceneManager::Release(void){
 	mScene->Release();
 }
 
-void SceneManager::ChangeScene(SCENE_ID nextId, bool isFading)
-{
+void SceneManager::ChangeScene(SCENE_ID nextId, bool isFading){
 	mWaitSceneID = nextId;
 
-	if (isFading)
-	{
+	if (isFading){
 		mFader->SetFade(Fader::FADE_STATE::FADE_OUT);
 		mIsSceneChanging = true;
 	}
-	else 
-	{
+	else {
 		DoChangeScene();
 	}
 
@@ -95,14 +83,12 @@ float SceneManager::GetDeltaTime(void){
 	return mDeltaTiime;
 }
 
-void SceneManager::DoChangeScene(void)
-{
+void SceneManager::DoChangeScene(void){
 	mScene->Release();
 
 	mSceneID = mWaitSceneID;
 
-	switch (mSceneID)
-	{
+	switch (mSceneID){
 	case SCENE_ID::TITLE:
 		mScene = new TitleScene(this);
 		break;
