@@ -1,5 +1,5 @@
-#include <DxLib.h>
-#include "TestPlayer.h"
+#include<DxLib.h>
+#include"TestPlayer.h"
 
 void TestPlayer::Update(void){
 	

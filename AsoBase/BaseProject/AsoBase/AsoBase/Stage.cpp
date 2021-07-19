@@ -1,10 +1,10 @@
-#include <DxLib.h>
+#include<DxLib.h>
 #include<string>
 #include<vector>
 #include<fstream>
 #include"GameScene.h"
 #include"Utility.h"
-#include "Stage.h"
+#include"Stage.h"
 
 Stage::Stage(GameScene* scene){
 	mGameScene = scene;

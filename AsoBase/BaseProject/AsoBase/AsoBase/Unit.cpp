@@ -1,11 +1,11 @@
-#include <DxLib.h>
-#include "GameCommon.h"
-#include "KeyCheck.h"
-#include "SceneManager.h"
-#include "GameScene.h"
-#include "Stage.h"
-#include "Box.h"
-#include "Unit.h"
+#include<DxLib.h>
+#include"GameCommon.h"
+#include"KeyCheck.h"
+#include"SceneManager.h"
+#include"GameScene.h"
+#include"Stage.h"
+#include"Box.h"
+#include"Unit.h"
 
 Unit::Unit(GameScene* scene){
 	mGameScene = scene;

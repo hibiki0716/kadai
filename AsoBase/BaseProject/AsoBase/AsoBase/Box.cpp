@@ -1,9 +1,9 @@
-#include <DxLib.h>
-#include "GameScene.h"
-#include "SceneManager.h"
-#include "GameCommon.h"
-#include "Stage.h"
-#include "Box.h"
+#include<DxLib.h>
+#include"GameScene.h"
+#include"SceneManager.h"
+#include"GameCommon.h"
+#include"Stage.h"
+#include"Box.h"
 
 Box::Box(GameScene* scene) {
 	mScene = scene;
@@ -33,14 +33,12 @@ void Box::Init(Vector2 mapPos){
 
 void Box::Update(void){
 
-	switch (mState)
-	{
+	switch (mState){
 	case Box::STATE::IDLE:
 
 		break;
 	case Box::STATE::MOVE:
-	case Box::STATE::BACK_MOVE:
-	{
+	case Box::STATE::BACK_MOVE:{
 		mStepMove += mManager->GetDeltaTime();
 		float t = mStepMove / TIME_MOVE;
 		mPos = Vector2::Lerp(mMvSPos, mMvEPos, t);
@@ -229,8 +227,7 @@ bool Box::IsPossiblePush(DIR dir){
 	mapPos.y /= BLOCK_SIZE;
 
 	// 移動先座標
-	switch (dir)
-	{
+	switch (dir){
 	case DIR::DOWN:
 		mapPos.y += 1;
 		break;
@@ -279,8 +276,7 @@ void Box::ChangeState(STATE state){
 	// 状態を変更
 	mState = state;
 
-	switch (mState)
-	{
+	switch (mState){
 	case Box::STATE::IDLE: {
 		// 荷物置き場判定
 		Storage* storage = mScene->GetCollisionStorage(mPos);
@@ -295,8 +291,6 @@ void Box::ChangeState(STATE state){
 	}
 	case Box::STATE::MOVE: {
 		// 線形補間による移動処理を作成
-
-
 		// 経過時間を初期化
 		mStepMove = 0.0f;
 		// 移動元座標を現在座標に
@@ -334,8 +328,6 @@ void Box::ChangeState(STATE state){
 	case Box::STATE::BACK_MOVE: {
 		// 経過時間を初期化
 		mStepMove = 0.0f;
-		// 
-		//mHistry;
 		// 移動元座標
 		mMvSPos = mPos;
 		// 移動先座標

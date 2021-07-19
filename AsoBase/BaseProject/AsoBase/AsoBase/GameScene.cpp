@@ -1,20 +1,20 @@
-#include <DxLib.h>
+#include<DxLib.h>
 #include<vector>
 #include<string>
 #include<fstream>
 #include<stack>
-#include "KeyCheck.h"
-#include "GameCommon.h"
-#include "SceneManager.h"
-#include "Stage.h"
-#include "Unit.h"
-#include "Box.h"
-#include "Storage.h"
-#include "Vector2.h"
+#include"KeyCheck.h"
+#include"GameCommon.h"
+#include"SceneManager.h"
+#include"Stage.h"
+#include"Unit.h"
+#include"Box.h"
+#include"Storage.h"
+#include"Vector2.h"
 #include"Fader.h"
 #include"Utility.h"
 #include"TimeLimit.h"
-#include "GameScene.h"
+#include"GameScene.h"
 
 GameScene::GameScene(SceneManager* manager) : SceneBase(manager){
 	mStageNo = 1;
@@ -23,7 +23,6 @@ GameScene::GameScene(SceneManager* manager) : SceneBase(manager){
 	mFader->Init();
 
 	mTimeLimit = new TimeLimit(manager);
-	
 }
 
 /// <summary>
@@ -64,13 +63,11 @@ void GameScene::Init(void){
 /// <returns></returns>
 void GameScene::Update(void){
 
-	if (keyTrgDown[KEY_SYS_START])
-	{
+	if (keyTrgDown[KEY_SYS_START]){
 		mSceneManager->ChangeScene(SCENE_ID::GAMEOVER, true);
 	}
 
-	switch (mState)
-	{
+	switch (mState){
 	case GameScene::STATE::GAME: 
 		UpdateGame();
 		break;
@@ -168,8 +165,7 @@ void GameScene::UpdateChangeStge(void){
 
 	Fader::FADE_STATE state = mFader->GetState();
 
-	switch (state)
-	{
+	switch (state){
 	case Fader::FADE_STATE::FADE_OUT:
 		// 段々暗くする
 		if (mFader->IsEnd() == true) {
@@ -203,8 +199,7 @@ void GameScene::Draw(void){
 	// 画面のクリア
 	ClearDrawScreen();
 
-	switch (mState)
-	{
+	switch (mState){
 	case GameScene::STATE::GAME:
 		DrawGame();
 		break;
@@ -343,7 +338,6 @@ Box* GameScene::GetCollisionBox(Vector2 pos){
 			ret = mBoxes[i];
 			break;
 		}
-		
 	}
 
 	return ret;
@@ -364,7 +358,6 @@ Storage* GameScene::GetCollisionStorage(Vector2 pos){
 			ret = mStorages[i];
 			break;
 		}
-
 	}
 	return ret;
 }
@@ -419,6 +412,17 @@ void GameScene::MinusCntMove(void){
 	mCntMove--;
 }
 
+void GameScene::ChangeSelectStage(int stageNo){
+	mStageNo = stageNo-1;
+	//mPopupUIBase->Close();
+	ChangeState(STATE::CHANGE_STAGE);
+}
+
+std::map<int, int> GameScene::GetBestScores(void)
+{
+	return mBestScores;
+}
+
 void GameScene::ChangeStage(void){
 	Release();
 
@@ -435,9 +439,7 @@ void GameScene::SetStage(void){
 	// 荷物置き場
 	Storage* tmpStorage;
 
-
-	switch (mStageNo)
-	{
+	switch (mStageNo){
 	case 1:
 		// Unit
 		mUnit = new Unit(this);
@@ -515,7 +517,6 @@ void GameScene::LoadGimmickData(void){
 		std::vector<std::string> strvec = Utility::Split(line, ',');
 
 		// Xで分割されたstrvec
-
 		// mMapに値を代入して、
 		// ステージを作成
 		for (int x = 0; x < strvec.size(); x++) {

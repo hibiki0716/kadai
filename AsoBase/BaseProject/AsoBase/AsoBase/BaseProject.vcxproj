@@ -165,11 +165,13 @@
     <ClCompile Include="GameCommon.cpp" />
     <ClCompile Include="GameoverScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="HightScoreMenuUI.cpp" />
     <ClCompile Include="KeyCheck.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="StageSelectMenuUI.cpp" />
     <ClCompile Include="Storage.cpp" />
     <ClCompile Include="TestPlayer.cpp" />
     <ClCompile Include="TimeLimit.cpp" />
@@ -188,11 +190,13 @@
     <ClInclude Include="GameCommon.h" />
     <ClInclude Include="GameoverScene.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="HightScoreMenuUI.h" />
     <ClInclude Include="KeyCheck.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Stage.h" />
+    <ClInclude Include="StageSelectMenuUI.h" />
     <ClInclude Include="Storage.h" />
     <ClInclude Include="TestPlayer.h" />
     <ClInclude Include="TimeLimit.h" />

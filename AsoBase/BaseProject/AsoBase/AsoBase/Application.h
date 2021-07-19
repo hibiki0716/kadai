@@ -1,5 +1,5 @@
 #pragma once
-#include "SceneManager.h"
+#include"SceneManager.h"
 
 class Application
 {
@@ -7,7 +7,8 @@ public:
 	bool Init(void);
 	void Run(void);
 	bool Release(void);
+
 private:
-	//インスタンスの生成
+	// インスタンスの生成
 	SceneManager mSceneManager;
 };

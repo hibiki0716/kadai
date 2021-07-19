@@ -1,5 +1,5 @@
 #pragma once
-#include "GameScene.h"
+#include"GameScene.h"
 class SceneManager;
 
 class GameoverScene : public SceneBase
@@ -10,6 +10,7 @@ public:
 	void Update(void) override;
 	void Draw(void) override;
 	void Release(void) override;
+
 private:
 	int mImage;
 

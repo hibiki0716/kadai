@@ -1,9 +1,9 @@
-#include "DxLib.h"
-#include "Fader.h"
-#include "TitleScene.h"
-#include "GameScene.h"
-#include "GameoverScene.h"
-#include "SceneManager.h"
+#include <DxLib.h>
+#include"Fader.h"
+#include"TitleScene.h"
+#include"GameScene.h"
+#include"GameoverScene.h"
+#include"SceneManager.h"
 
 void SceneManager::Init(){
 

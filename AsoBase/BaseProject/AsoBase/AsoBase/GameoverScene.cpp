@@ -1,8 +1,8 @@
-#include "DxLib.h"
-#include "KeyCheck.h"
-#include "GameCommon.h"
-#include "SceneManager.h"
-#include "GameoverScene.h"
+#include<DxLib.h>
+#include"KeyCheck.h"
+#include"GameCommon.h"
+#include"SceneManager.h"
+#include"GameoverScene.h"
 
 GameoverScene::GameoverScene(SceneManager* manager) : SceneBase(manager){
 }
@@ -15,11 +15,9 @@ void GameoverScene::Init(void){
 }
 
 void GameoverScene::Update(void){
-
 	if (keyTrgDown[KEY_SYS_START]){
 		mSceneManager->ChangeScene(SCENE_ID::TITLE, true);
 	}
-
 }
 
 void GameoverScene::Draw(){
@@ -32,12 +30,12 @@ void GameoverScene::Draw(){
 
 	SetFontSize(50);
 
+	// “_–Å
 	count++;
 	if (count / 30 % 2) {
 		DrawString(DEFAULT_SCREEN_SIZE_X / 2 + 40, DEFAULT_SCREEN_SIZE_Y, "SPEACE KEY", 0x999999);
 
 	}
-
 }
 
 void GameoverScene::Release(void){

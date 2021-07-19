@@ -1,8 +1,8 @@
-#include <fstream>
-#include <string>
-#include <sstream>
-#include <vector>
-#include "Utility.h"
+#include<fstream>
+#include<string>
+#include<sstream>
+#include<vector>
+#include"Utility.h"
 
 std::vector<std::string> Utility::Split(std::string& line, char delimiter){
 

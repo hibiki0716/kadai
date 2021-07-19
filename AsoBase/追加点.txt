@@ -1,0 +1,12 @@
+GameScene
+
+UpdateGame()
+
+// メニューが開いてるか
+
+mPopupBase->Update();
+
+// 処理を中断
+return;
+
+HightScoreMenuUIはStageSelectMenuUIと一緒

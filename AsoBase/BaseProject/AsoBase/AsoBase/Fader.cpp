@@ -1,5 +1,5 @@
-#include "DxLib.h"
-#include "Fader.h"
+#include<DxLib.h>
+#include"Fader.h"
 
 Fader::FADE_STATE Fader::GetState(void){
 	return mState;
@@ -55,5 +55,4 @@ void Fader::Update(void){
 	}
 
 	SetDrawBright(mBrightValue, mBrightValue, mBrightValue);
-
 }

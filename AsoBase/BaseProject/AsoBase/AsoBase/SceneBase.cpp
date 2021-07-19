@@ -1,5 +1,5 @@
-#include "SceneBase.h"
-#include "SceneManager.h"
+#include"SceneBase.h"
+#include"SceneManager.h"
 
 SceneBase::SceneBase(SceneManager* _manager){
 	mSceneManager = _manager;

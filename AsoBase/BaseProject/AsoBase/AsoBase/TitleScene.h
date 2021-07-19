@@ -1,5 +1,5 @@
 #pragma once
-#include "SceneBase.h"
+#include"SceneBase.h"
 class SceneManager;
 
 class TitleScene : public SceneBase
@@ -10,8 +10,8 @@ public:
 	void Update(void) override;
 	void Draw(void) override;
 	void Release(void) override;
+
 private:
 	int mImage;
-
 	int count;
 };

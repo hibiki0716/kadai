@@ -1,5 +1,5 @@
 #include<DxLib.h>
-#include "PopupUIBase.h"
+#include"PopupUIBase.h"
 
 PopupUIBase::PopupUIBase(GameScene* scene){
 	mGameScene = scene;
@@ -12,7 +12,10 @@ void PopupUIBase::Init(Vector2 pos){
 }
 
 void PopupUIBase::Update(void){
-
+	// Mボタンが押されたら、メニューを閉じる
+	if (KeyTrigerDown[KEY_P1_B]) {
+		Close();
+	}
 }
 
 void PopupUIBase::Draw(void){

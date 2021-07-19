@@ -84,6 +84,12 @@ public:
 	// 移動歩数をマイナス
 	void MinusCntMove(void);
 
+	// メニューで選択されたステージへ遷移
+	void ChangeSelectStage(int stageNo);
+
+	// ステージごとのBestスコア
+	std::map<int, int> GetBestScores(void);
+
 private:
 	Stage* mStage;
 	Unit* mUnit;

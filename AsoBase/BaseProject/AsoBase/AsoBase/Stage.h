@@ -1,6 +1,6 @@
 #pragma once
-#include "GameCommon.h"
-#include "Vector2.h"
+#include"GameCommon.h"
+#include"Vector2.h"
 
 class GameScene;
 

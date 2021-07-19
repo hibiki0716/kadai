@@ -1,8 +1,8 @@
 #include<DxLib.h>
-#include "GameCommon.h"
-#include "GameScene.h"
-#include "SceneManager.h"
-#include "Storage.h"
+#include"GameCommon.h"
+#include"GameScene.h"
+#include"SceneManager.h"
+#include"Storage.h"
 
 Storage::Storage(GameScene* scene){
 	mScene = scene;

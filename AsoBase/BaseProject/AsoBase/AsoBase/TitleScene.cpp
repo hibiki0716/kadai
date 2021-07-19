@@ -1,7 +1,7 @@
-#include "DxLib.h"
-#include "KeyCheck.h"
-#include "SceneManager.h"
-#include "TitleScene.h"
+#include<DxLib.h>
+#include"KeyCheck.h"
+#include"SceneManager.h"
+#include"TitleScene.h"
 
 TitleScene::TitleScene(SceneManager* manager) : SceneBase(manager){
 }
